@@ -11,41 +11,44 @@ if __name__ == "__main__":
     number = add_numbers(20, 15)
     print(number)
 
-    def add_numbers(a, b):
-        """
-        Adds two numbers together.
+
+def add_numbers(a, b):
+    """
+    Adds two numbers together.
         
-        Parameters:
-            a (int or float): The first number to be added.
-            b (int or float): The second number to be added.
+    Parameters:
+        a (int or float): The first number to be added.
+        b (int or float): The second number to be added.
 
-        Returns:
-            int or float: The sum of the two input values.
-        """
-        result = a + b
-        return result
+    Returns:
+        int or float: The sum of the two input values.
+    """
+    result = a + b
+    return result
 
-    """ Libreria time forma de importar una libreria"""
-    import time
+
+""" Libreria time forma de importar una libreria"""
+import time
 
 class Timer:
-        # Clase para medir el tiempo de ejecución
-        def __enter__(self):
-            """Add two numbers together.
-            result devuelve el valor concatenado
-            Parameters:
-            a (int or float)
-            """
-            self.start_time = time.time()
-            return self
+    # Clase para medir el tiempo de ejecución
+    def __enter__(self):
+        """Add two numbers together.
+        result devuelve el valor concatenado
+        Parameters:
+        a (int or float)
+        """
+        self.start_time = time.time()
+        return self
 
-        def __exit__(self, exc_type, exc_val, exc_tb):
-            end_time = time.time()
-            print(f"Time token: {end_time - self.start_time} segundos")
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        end_time = time.time()
+        print(f"Time token: {end_time - self.start_time} segundos")
 
 with Timer():
         # Code to be timed goes here
         pass
+
 
 def greet(name):
     """Greets the user with a personalized message.
