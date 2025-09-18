@@ -14,7 +14,7 @@ Una aplicación de escritorio desarrollada con el framework Flet para Python, si
 
 ## Descripción
 
-*Desarrolo de una app usando estructuras de datos, proyecto del curso ED1 - UAGRM*
+*Desarrollo de una app usando estructuras de datos, proyecto del curso ED1 - UAGRM*
 
 ## Características
 
