@@ -18,7 +18,7 @@ Una aplicación de escritorio desarrollada con el framework Flet para Python, si
 
 ## Características
 
-- **Gestión de conjuntos y polinomios:** Permite a los usuarios añadir, editar y eliminar elementos, y realizar operaciones específicas de cada estructura (unión, intersección, suma, resta, etc.).
+- **Gestión de polinomios:** Permite a los usuarios sumar y restar polinomios.
 
 ## Requisitos Previos
 
@@ -54,14 +54,25 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
       source venv/bin/activate
       ```
 
-5.  **Instala las dependencias:**
+5.  **Verifica que pip funcione:**
+    ```bash
+    pip --version
+    ```
+    
+
+6.  **Instala las dependencias:**
     ```bash
     pip install -r requirements.txt
     ```
 
-6.  **Ejecuta la aplicación:**
+7.  **Actualiza Flet:**
     ```bash
-    python main_flet.py
+    pip install --upgrade flet
+    ```
+
+8.  **Ejecuta la aplicación:**
+    ```bash
+    python pol_main.py
     ```
 
 ## Estructura del Proyecto
