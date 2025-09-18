@@ -14,11 +14,11 @@ Una aplicación de escritorio desarrollada con el framework Flet para Python, si
 
 ## Descripción
 
-*Desarrolo de una app usando estructuras de datos desde una plantilla base, proyecto del curso ED1 - UAGRM*
+*Desarrolo de una app usando estructuras de datos, proyecto del curso ED1 - UAGRM*
 
 ## Características
 
-- **Gestion de un incrementador:** Permite a los usuarios imcrementar un numero.
+- **Gestión de polinomios:** Permite a los usuarios sumar y restar polinomios.
 
 ## Requisitos Previos
 
@@ -42,7 +42,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
 
 2.  **Navega al directorio del proyecto:**
     ```bash
-    cd Estructura-de-Datos-I/GitHub/Proyectos/flet_app
+    cd Estructura-de-Datos-I/GitHub/Proyectos/flet_pol
     ```
 
 3.  **Crea un entorno virtual:**
@@ -60,14 +60,25 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
       source venv/bin/activate
       ```
 
-5.  **Instala las dependencias:**
+5.  **Verifica que pip funcione:**
+    ```bash
+    pip --version
+    ```
+    
+
+6.  **Instala las dependencias:**
     ```bash
     pip install -r requirements.txt
     ```
 
-6.  **Ejecuta la aplicación:**
+7.  **Actualiza Flet:**
     ```bash
-    python main_flet.py
+    pip install --upgrade flet
+    ```
+
+8.  **Ejecuta la aplicación:**
+    ```bash
+    python pol_main.py
     ```
 
 ## Estructura del Proyecto
@@ -76,10 +87,10 @@ El proyecto sigue una arquitectura Modelo-Vista-Controlador (MVC) para separar l
 
 ```
 flet_app/
-├── controller_flet.py  # Controlador: Maneja la lógica de la aplicación y la interacción del usuario.
-├── main_flet.py        # Punto de entrada: Inicializa y ejecuta la aplicación Flet.
-├── model_flet.py       # Modelo: Gestiona los datos y la lógica de negocio.
-├── view_flet.py        # Vista: Define y construye la interfaz de usuario.
+├── pol_controller.py  # Controlador: Maneja la lógica de la aplicación y la interacción del usuario.
+├── pol_main.py        # Punto de entrada: Inicializa y ejecuta la aplicación Flet.
+├── pol_model.py       # Modelo: Gestiona los datos y la lógica de negocio.
+├── pol_view.py        # Vista: Define y construye la interfaz de usuario.
 ├── requirements.txt    # Lista de dependencias de Python.
 └── README.md           # Este archivo.
 ```
