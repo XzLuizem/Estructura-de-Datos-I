@@ -30,8 +30,7 @@ Una aplicación de escritorio desarrollada con el framework Flet para Python, si
 Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
 
 1.  **Clona el repositorio:**
-    - **HTTPS:**
-      
+    - **HTTPS:**      
     ```bash
     git clone https://github.com/XzLuizem/Estructura-de-Datos-I.git
     ```

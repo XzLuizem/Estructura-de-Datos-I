@@ -20,7 +20,21 @@ def main(page: ft.Page):
     page.window_width = 550
     page.window_height = 600
     page.padding = ft.padding.all(30)
-    page.theme_mode = ft.ThemeMode.LIGHT  # Opcional: LIGHT, DARK
+    # page.theme_mode = ft.ThemeMode.DARK  # Opcional: LIGHT, DARK, SYSTEM
+
+    # Tema personalizado
+    page.theme = ft.Theme(
+        color_scheme=ft.ColorScheme(
+            primary="cyanaccent400",
+            secondary="pinkaccent400",
+            background="bluegrey900",
+            surface="bluegrey800",
+            on_primary="black",
+            on_secondary="black",
+            on_background="white",
+            on_surface="white",
+        )
+    )
     page.scroll = ft.ScrollMode.AUTO
 
     # --- Inicialización MVC ---
