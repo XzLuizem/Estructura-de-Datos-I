@@ -2,6 +2,7 @@
 """
 Este módulo contiene la implementación del controlador para la aplicación de polinomios.
 """
+import flet as ft
 
 from pol_model import PolynomialModel
 from pol_view import PolynomialView
